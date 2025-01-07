@@ -1,17 +1,7 @@
 {
-	"routes": [{
-		"route": "/*",
-		"allowedRoles": ["authenticated"]
-	}],
-	"navigationFallback": {
-		"rewrite": "/index.html"
-	},
-	"networking": {
-		"allowedIpRanges": ["AzureFrontDoor.Backend"]
-	},
-	"responseOverrides": {
-		"404": {
-			"rewrite": "/auth.html"
-		}
-	}
+  "networking": {
+    "allowedIpRanges": [
+      "195.21.138.85/32"
+    ]
+  }
 }
